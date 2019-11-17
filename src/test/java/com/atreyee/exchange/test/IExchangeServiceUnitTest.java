@@ -31,29 +31,4 @@ public class IExchangeServiceUnitTest {
         assertEquals("7,47",exchangeService.exchangeValue("EUR/DKK", 1.0));
         assertEquals("74.700",exchangeService.exchangeValue("EUR/DKK", 10000.0));
     }
-
-   /* @Test(expected = InvalidInputException.class)
-    public void blankMoneyCurrency() throws Exception {
-        exchangeService.exchangeValue("EUR/",1.0);
-    }
-
-    @Test(expected = InvalidInputException.class)
-    public void blankCurrency() throws Exception {
-        exchangeService.exchangeValue("/",1.0);
-    }
-
-    @Test(expected = InvalidInputException.class)
-    public void invalidFormatCurrency() throws Exception {
-        exchangeService.exchangeValue("EURUSD",1.0);
-    }
-
-    @Test(expected = InvalidInputException.class)
-    public void invalidMainCurrency() throws Exception {
-        exchangeService.exchangeValue("ABC/BBC",1.0);
-    }
-
-    @Test(expected = InvalidInputException.class)
-    public void moneyCurrencyNotAvailable() throws Exception {
-        exchangeService.exchangeValue("EUR/BBC",1.0);
-    }*/
 }
